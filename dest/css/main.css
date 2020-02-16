@@ -254,7 +254,8 @@ body {
     .header__container .header__logo .header__logo-text {
       display: inline-block;
       color: #ffffff;
-      font-family: Dosis-bold; }
+      font-family: Dosis-bold;
+      font-size: 24px; }
   .header__container .header__menu {
     display: flex;
     flex-direction: row;
@@ -263,7 +264,8 @@ body {
     align-items: center;
     font-family: Roboto-regular; }
     .header__container .header__menu .header__burger {
-      display: none; }
+      display: none;
+      cursor: pointer; }
     .header__container .header__menu .header__link {
       text-decoration: none;
       color: #fff; }
