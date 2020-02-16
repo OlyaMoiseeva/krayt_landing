@@ -7,19 +7,19 @@ const minify = require('gulp-minify');
 function jsMinify() {
   return src('src/js/*.js')
     .pipe(minify())
-    . pipe(dest('dest/js'))
+    . pipe(dest('dist/js'))
 }
 
 function compileCss () {
 	return src('src/scss/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(dest('dest/css'));
+    .pipe(dest('dist/css'));
 }
 
 function autoprefixing () {
-	return src('dest/css/*.css')
+	return src('dist/css/*.css')
 	.pipe(autoprefixer())
-	.pipe(dest('dest/css'));
+	.pipe(dest('dist/css'));
 }
 exports.watch = function() {
 	watch('src/scss/*.scss', compileCss);
