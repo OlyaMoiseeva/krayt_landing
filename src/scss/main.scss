@@ -85,14 +85,14 @@ body {
       position: relative;
       line-height: 30px;
       &:before {
-      content: "";
-      position: absolute;
-      background: url(../../src/images/white-check.png);
-      width: 15px;
-      height: 15px;
-      left: -20px;
-      top: 7px;
-    }
+        content: "";
+        position: absolute;
+        background: url(../../src/images/white-check.png);
+        width: 15px;
+        height: 15px;
+        left: -20px;
+        top: 7px;
+      }
     }
     .banner__exploring-button {
       width: 195px;
@@ -190,6 +190,21 @@ body {
     .dont-leave__text_2 {
       margin-bottom: $title-mrgn;
     }
+    .dont-leave__link {
+      font-family: $r-medium;
+      margin-left: 20px;
+      position: relative;
+      line-height: 30px;
+      &:before {
+        content: "";
+        position: absolute;
+        background: url(../../src/images/black-check.png);
+        width: 15px;
+        height: 15px;
+        left: -20px;
+        top: 8px;
+      }
+    }
   }
   .dont-leave__img-box {
     position: relative;
@@ -255,8 +270,8 @@ body {
   position:relative;
   clear:both;
   img {
-    visibility:hidden; /* hide images until carousel can handle them */
-    cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+    visibility:hidden;
+    cursor:pointer;
     box-shadow: 0px 66px 67px -32px $lines-color;
   }
 }
@@ -298,7 +313,7 @@ body {
       border-left: 132px solid $white;
       border-right: 132px solid $white;
     }
-    p {
+    .pricing__text {
       text-align: center;
       line-height: 40px;
       &:not(:last-of-type) {
@@ -324,6 +339,7 @@ body {
       font-family: $r-regular;
       font-size: 20px;
       color: $title-link-color;
+      padding: 9px;
     }
     .pricing__price {
       position: relative;
@@ -341,16 +357,14 @@ body {
       .pricing__num {
         font-family: $d-medium;
         font-size: 40px;
-        //vertical-align: bottom !important;
         height: 40px;
       }
       .pricing__sub {
         font-family: $d-medium;
-        //vertical-align: bottom !important;
       }
       .pricing__sup {
         font-family: $d-medium;
-        //vertical-align: medium !important;
+        vertical-align: super;
       }
     }
   }
@@ -387,7 +401,6 @@ body {
     }
   }
 }
-
 .slick-prev, .slick-next {
   position: relative;
   font-size: 22px !important;

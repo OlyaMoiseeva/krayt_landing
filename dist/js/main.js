@@ -13,7 +13,7 @@ $(document).ready(function () {
   $(window).on('resize', function() {
 
     setSlides();
-    se();
+    setArrows();
     if (initialSlides !== slides) {
       slider(slides);
       initialSlides = slides;
@@ -90,9 +90,15 @@ $(document).ready(function () {
       }
     ]
   });
-  function se() {  
+
+    
+  function setArrows() {  
     $('.slick-prev').html('<div class="slick-arrow">&#8592</div>');
     $('.slick-next').html('<div class="slick-arrow">&#8594</div>');
   };
-  se();
+  setArrows();
+  $('.header__burger').on('click', function() {
+    $('.header__link').toggleClass('header__link_des');
+    $('.header__menu').toggleClass('header__menu_mob');
+  });
 });

@@ -184,7 +184,10 @@
   .carousel .slick-next {
     right: 16% !important;
   }
-  body .header__container .header__menu a {
+  body .header__container .header__menu .header__link_des {
+    display: none;
+  }
+  body .header__container .header__menu .header__link_last {
     display: none;
   }
   body .header__container .header__menu {
@@ -195,6 +198,11 @@
   }
   body .banner .banner__text {
     height: 450px;
+  }
+  body .header__container .header__menu_mob {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 72px;
   }
 }
 @media screen and (max-width: 450px) {
